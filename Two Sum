@@ -8,6 +8,6 @@ class Solution {
             }
             Numsmap.put(nums[i], i);
         }
-        throw new IllegalArgumentException("No match found!");
+        throw new IllegalArgumentException("No match found!!");
     }   
 }
