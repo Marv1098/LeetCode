@@ -1,0 +1,13 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> Numsmap = new HashMap<Integer, Integer>();
+        for (int i=0; i< nums.length; i++) {
+            int comp = target - nums[i];
+            if (Numsmap.containsKey(comp)) {
+                return new int[] {Numsmap.get(comp), i};
+            }
+            Numsmap.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("No match found!");
+    }   
+}
